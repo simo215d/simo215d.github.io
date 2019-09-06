@@ -2,7 +2,7 @@
 <!-- color: #b13ad0 -->
 
 ## Velkommen til Simon github tag
-<span style="color:green">Jeg er nu på datamatiker uddannelsen og jeg **glæder** mig til at blive bedre, så jeg kan lave nogle sjove projekter </span>.
+<span style="color:green">Jeg er ny på datamatiker uddannelsen og jeg **glæder** mig til at blive bedre, så jeg kan lave nogle sjove projekter </span>.
 
 
 As Ghandi said:
