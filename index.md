@@ -5,9 +5,9 @@
 <span style="color:green">Jeg er ny på datamatiker uddannelsen <br/>jeg **glæder** mig til at blive bedre, så jeg kan lave nogle sjove projekter </span>
 
 
-As Ghandi said:
+As <span style="color:green">Ghandi</span> said
 
-> people are the problem
+> people are the problem <br/>
 > nukes the solution
 
 
