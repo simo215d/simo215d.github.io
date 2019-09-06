@@ -1,4 +1,4 @@
-# simo215d.github.io
+simo215d.github.io
 
 velkommen til min side!
 
