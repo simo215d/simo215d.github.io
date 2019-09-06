@@ -1,7 +1,7 @@
 <!-- background: #fefe79 -->
 <!-- color: #b13ad0 -->
 
-## Velkommen til Simon github tag
+## Velkommen til Simons github :)
 <span style="color:green">Jeg er ny på datamatiker uddannelsen <br/>jeg **glæder** mig til at blive bedre, så jeg kan lave nogle sjove projekter </span>
 
 
