@@ -3,7 +3,7 @@ Jeg er ny på datamatiker uddannelsen <br/>
 jeg **glæder** mig til at blive bedre, så jeg kan lave nogle sjove projekter
 
 
-As <span style="color:pink">wise man</span> once said
+As a <span style="color:pink">wise man</span> once said
 
 > A user interface is like a joke.<br/>
 > If you have to explain it, it´s not that good.
