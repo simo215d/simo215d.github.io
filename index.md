@@ -21,5 +21,4 @@ public void printMe() {
   System.out.println("Her står noget java kode");
 }
 ```
-<br/>
 -*Lavet af Simon*-
