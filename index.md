@@ -14,3 +14,10 @@ As a <span style="color:green">wise man</span> once said
 <br/>
 Her er links til de hjemmesider hvor jeg bruger det meste af min fritid
 [Reddit](https://www.reddit.com/), [YouTube](https://www.youtube.com/), [Twitch](https://www.twitch.tv/directory)
+<br/>
+Ind til videre har vi lært det her i java <br/>
+```JAVA
+public void printMe() {
+  System.out.println("Her står noget java kode");
+}
+```
