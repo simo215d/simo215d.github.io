@@ -1,8 +1,8 @@
-## Simon's GitHub page
-
-Pyromancer
-[Download the jar file](https://github.com/simo215d/JanuaryGame_JarFile/raw/master/Pyromancer.jar)
-
-
-About me
-[link to me :)](aboutindex.md)
+h2 class="code-line" data-line-start=0 data-line-end=1 ><a id="Simons_GitHub_page_0"></a>Simon’s GitHub page</h2>
+ 
+<p class="has-line-data" data-line-start="2" data-line-end="4">Pyromancer<br>
+  <a href="https://github.com/simo215d/JanuaryGame_JarFile/raw/master/Pyromancer.jar">Download the jar file</a>
+</p>
+<p class="has-line-data" data-line-start="5" data-line-end="7">About me<br>
+  <a href="aboutindex.md">link to me :)</a>
+</p>
