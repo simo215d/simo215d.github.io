@@ -5,4 +5,4 @@ Pyromancer
 
 
 About me
-[link to me :)](https://github.com/simo215d/simo215d.github.io/blob/master/aboutindex.md)
+[link to me :)](aboutindex.md)
