@@ -3,7 +3,7 @@ body{
   margin:0px;position:relative;
 }
 
-.nameTitle{
+#nameTitle{
   background-color: black;
   height:8%;
   width:100%;
