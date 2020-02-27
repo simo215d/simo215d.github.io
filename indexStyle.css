@@ -24,3 +24,9 @@ div.nameTitle:hover{
   font-family:Courier;
   font-size:35;
 }
+
+.spacer1{
+  height:18%;
+  width:100%;
+  text-align: center;
+}
