@@ -27,7 +27,7 @@ div.content:hover{
   background-color: white;
 }
 
-div.content{
+.content{
   border-style:solid;
   float:left;
   height:100%;
