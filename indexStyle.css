@@ -27,6 +27,14 @@ div.content:hover{
   background-color: white;
 }
 
+div.content{
+  border-style:solid;
+  float:left;
+  height:100%;
+  width:30%;
+  background-color: black;
+}
+
 .titleText{
   color:white;
   font-family:Courier;
