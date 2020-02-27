@@ -19,7 +19,7 @@ div.nameTitle:hover{
   padding-bottom:15;
 }
 
-div.content:hover{
+div.contentContainer:hover{
   border-style:solid;
   float:left;
   height:100%;
