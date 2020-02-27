@@ -10,3 +10,9 @@ body{
   padding-top:15;
   padding-bottom:15;
 }
+
+.titleText{
+  color:white;
+  font-family:Courier;
+  font-size:35;
+}
