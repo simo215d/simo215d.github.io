@@ -17,7 +17,7 @@ body{
   font-size:35;
 }
 
-#titleContentSpacer{
+.titleContentSpacer{
   height:18%;
   width:100%;
   text-align: center;
