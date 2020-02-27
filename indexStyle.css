@@ -30,3 +30,9 @@ div.nameTitle:hover{
   width:100%;
   text-align: center;
 }
+
+.contentText{
+  color:white;
+  font-family:Courier;
+  font-size:20;
+}
