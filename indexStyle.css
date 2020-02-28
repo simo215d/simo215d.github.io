@@ -18,6 +18,7 @@ div.contentContainer:hover{
   width:30%;
   background-color: black;
   border-color: white;
+  cursor: pointer;
 }
 
 .contentContainer{
