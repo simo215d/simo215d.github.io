@@ -24,7 +24,8 @@ div.contentContainer:hover{
   float:left;
   height:100%;
   width:30%;
-  background-color: white;
+  background-color: black;
+  border-color: white;
 }
 
 .contentContainer{
