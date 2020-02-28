@@ -11,14 +11,6 @@ body{
   padding-bottom:15;
 }
 
-div.nameTitle:hover{
-  background-color: white;
-  height:8%;
-  width:100%;
-  padding-top:15;
-  padding-bottom:15;
-}
-
 div.contentContainer:hover{
   border-style:solid;
   float:left;
