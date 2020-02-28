@@ -18,7 +18,6 @@ div.contentContainer:hover{
   width:30%;
   background-color: black;
   border-color: white;
-  transition: 2s;
 }
 
 .contentContainer{
@@ -27,6 +26,7 @@ div.contentContainer:hover{
   height:100%;
   width:30%;
   background-color: black;
+  transition: 0.5s;
 }
 
 .titleText{
