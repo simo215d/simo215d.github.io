@@ -11,6 +11,10 @@ body{
   padding-bottom:15;
 }
 
+.downloadButton:hover{
+  background-color: black;
+}
+
 div.contentContainer:hover{
   border-style:solid;
   float:left;
