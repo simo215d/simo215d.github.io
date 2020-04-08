@@ -12,12 +12,7 @@ body{
 }
 
 button{
-  width:200px; 
-  height: 50px;
-  font-size:20px;
-  background-color:white;
   border: 2px solid black;
-  margin: 0 auto;
 }
 
 .downloadButton:hover{
