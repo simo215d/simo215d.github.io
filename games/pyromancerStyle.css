@@ -11,8 +11,20 @@ body{
   padding-bottom:15;
 }
 
+.downloadButton{
+  width:100%; 
+  height: 100%;
+  font-size:20px;
+  background-color:white;
+  border: 2px solid black;
+}
+
 .downloadButton:hover{
-  background-color: black;
+  width:100%; 
+  height: 100%;
+  font-size:20px;
+  background-color:black;
+  border: 2px solid black;
 }
 
 div.contentContainer:hover{
