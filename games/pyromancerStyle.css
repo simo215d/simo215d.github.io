@@ -13,6 +13,7 @@ body{
 }
 
 button{
+  font-family:Courier;
   font-size:20;
   text-align:center;
   text-color:black;
@@ -24,6 +25,7 @@ button{
 }
 
 button:hover{
+  font-family:Courier;
   font-size:20;
   text-align:center;
   text-color:white;
