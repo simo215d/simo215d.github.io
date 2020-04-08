@@ -25,6 +25,7 @@ button{
 }
 
 button:hover{
+  cursor: pointer;
   font-family:Courier;
   font-size:20;
   color:white;
