@@ -13,6 +13,7 @@ body{
 }
 
 button{
+  font-size:20;
   text-align:center;
   text-color:black;
   border: 2px solid black;
@@ -23,6 +24,7 @@ button{
 }
 
 button:hover{
+  font-size:20;
   text-align:center;
   text-color:white;
   border: 2px solid black;
