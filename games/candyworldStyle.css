@@ -39,23 +39,10 @@ button:hover{
   transition: 0.1s;
 }
 
-div.contentContainer:hover{
-  border-style:solid;
-  float:left;
-  height:100%;
-  width:30%;
-  background-color: black;
-  border-color: white;
-  cursor: pointer;
-}
-
 .contentContainer{
-  border-style:solid;
   float:left;
   height:100%;
   width:30%;
-  background-color: black;
-  transition: 0.1s;
 }
 
 .titleText{
