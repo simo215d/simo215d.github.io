@@ -1,0 +1,49 @@
+body{
+  background-image: linear-gradient(#2e224d, #7f38ab);
+  margin:0px;position:relative;
+}
+
+.nameTitle{
+  background-color: black;
+  height:8%;
+  width:100%;
+  padding-top:15;
+  padding-bottom:15;
+}
+
+div.contentContainer:hover{
+  border-style:solid;
+  float:left;
+  height:100%;
+  width:30%;
+  background-color: black;
+  border-color: white;
+  cursor: pointer;
+}
+
+.contentContainer{
+  border-style:solid;
+  float:left;
+  height:100%;
+  width:30%;
+  background-color: black;
+  transition: 0.1s;
+}
+
+.titleText{
+  color:white;
+  font-family:Courier;
+  font-size:35;
+}
+
+.spacer1{
+  height:18%;
+  width:100%;
+  text-align: center;
+}
+
+.contentText{
+  color:white;
+  font-family:Courier;
+  font-size:20;
+}
