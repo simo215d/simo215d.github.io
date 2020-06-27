@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAGhfwxyfuzULAe7lcxLQEVjE4D02saGNk",
+        authDomain: "webmessagetest1.firebaseapp.com",
+        databaseURL: "https://webmessagetest1.firebaseio.com",
+        projectId: "webmessagetest1",
+        storageBucket: "webmessagetest1.appspot.com",
+        messagingSenderId: "917347669534",
+        appId: "1:917347669534:web:30bf3dac4319611e42c00f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    var myName = prompt("Enter your name");
+    function sendMessage() {
+        var message = document.getElementById("message").value;
+        firebase.database().ref("messages").push().set({
+           "sender": myName,
+           "message": message
+        });
+        return false;
+    }
+    //listen
+    firebase.database().ref("messages").on("child_added", function (snapshot) {
+        var html = "";
+        html += "<li>";
+        html += snapshot.val().sender + ": " + snapshot.val().message;
+        html += "</li>";
+        document.getElementById("messageList").innerHTML += html;
+    })
+</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:blanchedalmond;">
+<h1>Hej med dig!</h1>
+<form onsubmit="return sendMessage();">
+    <input id="message" placeholder="Enter message" autocomplete="off">
+    <input type="submit">
+</form>
+<ul id="messageList"></ul>
+</body>
+</html>
