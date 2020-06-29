@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+</head>
+<body style="background: #552b28">
+<div style="text-align: center">
+    <form onsubmit="join(document.getElementById('joinGameIDInput').valueOf().value); return false;" style="padding-bottom: 10px; padding-top: 10px">
+        <input id="joinGameIDInput" placeholder="Enter Game ID" autocomplete="off">
+        <input type="submit" value="Join game">
+    </form>
+    <form onsubmit="create(document.getElementById('createGameIDInput').valueOf().value); return false;">
+        <input id="createGameIDInput" placeholder="Enter Game ID" autocomplete="off">
+        <input type="submit" value="Create game">
+    </form>
+</div>
+<div style="width: 30%;text-align: center; margin: 20px auto 0%;">
+    <label id="currentGameLabel" style="color: white;">Current game: null</label>
+    <br/>
+    <label id="currentTypeLabel" style="color: white;">You are: null</label>
+    <br/>
+    <label id="playersLabel" style="color: white;">Total players: 0</label>
+    <br/>
+    <label id="currentTurnLabel" style="color: white;">It is currently null's turn</label>
+    <div id="r1" style="padding-top: 10px;">
+        <div onclick="place(this.id)" id="r1c1" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r1c1Label" style="font-size: 100px; color: #552b28">N</label></div>
+        <div onclick="place(this.id)" id="r1c2" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r1c2Label" style="font-size: 100px; color: #552b28">N</label></div>
+        <div onclick="place(this.id)" id="r1c3" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r1c3Label" style="font-size: 100px; color: #552b28">N</label></div>
+    </div>
+    <div id="r2" style="padding-top: 4px">
+        <div onclick="place(this.id)" id="r2c1" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r2c1Label" style="font-size: 100px; color: #552b28">N</label></div>
+        <div onclick="place(this.id)" id="r2c2" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r2c2Label" style="font-size: 100px; color: #552b28">N</label></div>
+        <div onclick="place(this.id)" id="r2c3" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r2c3Label" style="font-size: 100px; color: #552b28">N</label></div>
+    </div>
+    <div id="r3" style="padding-top: 4px">
+        <div onclick="place(this.id)" id="r3c1" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r3c1Label" style="font-size: 100px; color: #552b28">N</label></div>
+        <div onclick="place(this.id)" id="r3c2" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r3c2Label" style="font-size: 100px; color: #552b28">N</label></div>
+        <div onclick="place(this.id)" id="r3c3" style="width: 30%; height: 110px; display: inline-block; border: 2px white solid;"><label id="r3c3Label" style="font-size: 100px; color: #552b28">N</label></div>
+    </div>
+</div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBIqruTEL5coDTRiW1MsBJMtdR04xSJJ9g",
+        authDomain: "tictactoetest-6130d.firebaseapp.com",
+        databaseURL: "https://tictactoetest-6130d.firebaseio.com",
+        projectId: "tictactoetest-6130d",
+        storageBucket: "tictactoetest-6130d.appspot.com",
+        messagingSenderId: "394787998641",
+        appId: "1:394787998641:web:e779a86acbcea0d37b4b90"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    getfirebase();
+
+    function getfirebase() {
+        return firebase;
+    }
+
+    firebase.database().ref("startUpRef").set({
+        "test": "it works"
+    });
+    firebase.database().ref("startUpRef").get().set();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
