@@ -77,6 +77,7 @@ function join(ID)   {
             } else {
                 //alert("Invalid game id");
             }
+            alert("No game exists whith id: "+ID);
         }
     });
     return false;
