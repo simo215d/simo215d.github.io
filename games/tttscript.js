@@ -4,8 +4,10 @@ var gameOver = false;
 //notify opponent that we left, so that the game doesn't allow him to place and then delete the game.
 // this way we can close both tabs at the same time
 window.onbeforeunload = function(event) {
-    updateGame(game.state, game.currentTurn, game.totalPlayers-1);
-    getfirebase().database().ref("games/"+game.id).remove();
+    if (game.id!=="null") {
+        updateGame(game.state, game.currentTurn, game.totalPlayers - 1);
+        getfirebase().database().ref("games/" + game.id).remove();
+    }
 };
 
 function create(ID) {
@@ -47,8 +49,6 @@ function join(ID)   {
     if (game.id!=="null"){
         getfirebase().database().ref("games/"+game.id).remove();
     }
-    game.isO=false;
-    game.id=ID;
     var gamesList = [];
     var ref = getfirebase().database().ref("games");
     ref.once("value").then(function (snapshot) {
@@ -68,6 +68,8 @@ function join(ID)   {
                     alert("lobby is full...");
                     return false;
                 }
+                game.isO=false;
+                game.id=ID;
                 clearBoard();
                 listenToChange();
                 //alert("updating game with data: state: "+gamesList[i].gameState+" turn: "+gamesList[i].turn+" totalPlayers: "+(gamesList[i].totalPlayers+1));
@@ -77,7 +79,10 @@ function join(ID)   {
             } else {
                 //alert("Invalid game id");
             }
-            alert("No game exists whith id: "+ID);
+            alert("Game with the id \""+ID+"\" does not exist! Try another");
+        }
+        if (gamesList.length===0){
+            alert("Game with the id \""+ID+"\" does not exist! Try another");
         }
     });
     return false;
