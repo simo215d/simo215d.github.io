@@ -15,6 +15,10 @@ function create(ID) {
     if (game.id!=="null"){
         getfirebase().database().ref("games/"+game.id).remove();
     }
+    if (ID===""){
+        alert("You need to enter a game ID!");
+        return false;
+    }
     //check if the game exists
     var gamesList = [];
     var ref = getfirebase().database().ref("games");
