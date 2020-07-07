@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas{
+    //border: 2px solid black;
+}
+
+#menu{
+    display: flex;
+    height: 100px;
+    background: pink;
+}
+
+#slidecontainer{
+    width: 200px;
+    margin: auto 30% auto auto;
+}
+
+#brushWidthLabel{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#sliderValue{
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto auto auto 0;
+}
+
+.dot{
+    margin: auto auto auto auto;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.dot:hover{
+    cursor: pointer;
+}
+
+.slider:hover{
+    cursor: pointer;
+}
+
+#blackDot{
+    margin-left: 30%;
+    border-color: gray;
+    background-color: black;
+}
+
+#redDot{
+    background-color: red;
+}
+
+#blueDot{
+    background-color: blue;
+}
+
+#yellowDot{
+    background-color: yellow;
+}
+
+#greenDot{
+    background-color: green;
+}
