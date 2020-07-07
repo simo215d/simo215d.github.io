@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Draw</title>
+    <link rel="stylesheet" href="canvasDrawStyle.css"/>
+</head>
+<body>
+    <div id="menu">
+        <span class="dot" id="blackDot" onclick="setColor('black', this)"></span>
+        <span class="dot" id="redDot" onclick="setColor('red', this)"></span>
+        <span class="dot" id="blueDot" onclick="setColor('blue', this)"></span>
+        <span class="dot" id="yellowDot" onclick="setColor('yellow', this)"></span>
+        <span class="dot" id="greenDot" onclick="setColor('green', this)"></span>
+        <div class="slidecontainer" id="slidecontainer">
+            <label id="brushWidthLabel">Brush width:</label>
+            <label id="sliderValue"></label>
+            <input type="range" min="1" max="9" value="5" class="slider" id="myRange">
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="canvasDrawScript.js"></script>
+</body>
+</html>
